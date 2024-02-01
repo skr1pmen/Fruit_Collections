@@ -1,0 +1,90 @@
+@font-face {
+    src: url("../fonts/minecraft.ttf");
+    font-family: Minecraft;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #3c3f41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100svh;
+}
+.game{
+    width: 60%;
+    height: 90%;
+    background: url("../images/forest.png") center center no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+.header{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    font-family: Minecraft, sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transform: translateX(-50%);
+}
+.basket{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    bottom: 28px;
+}
+.popap{
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100svh;
+    background: rgba(0, 0, 0, 0.87);
+}
+.win{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h3{
+    font-size: 24px;
+    font-family: Minecraft, sans-serif;
+    color: #fff;
+    margin-bottom: 25px;
+}
+#username{
+    font-family: Minecraft, sans-serif;
+    font-size: 18px;
+    outline: none;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+#startGame{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#startGame:hover{
+    background: lightgreen;
+}
